@@ -472,14 +472,7 @@ input[type="submit"]:hover {
 
   .fecha {
     background-color: #2e8888;
-    transition: all 1s;
-  }
-
-  .fecha:hover {
-    size: 24px;
-    background-color: #0b7777;
-    animation: pulse;
-    animation-duration: 2s;
+   
   }
 
 
