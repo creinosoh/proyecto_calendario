@@ -5,7 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Mi CSS-->
+
     <link rel="stylesheet" href="../css/style.css">
+
+
     <title>Contacto</title>
 </head>
 
@@ -18,7 +28,7 @@
             <h2>Contacto</h2>
         </header>
 
-          <!--Menu de Navegación -->
+        <!--Menu de Navegación -->
         <nav>
             <ul>
                 <li><a href="../index.html">Calendario</a></li>
@@ -30,46 +40,51 @@
             <img class="menuHamburguesa" src="../assets/img/Hamburger_icon.svg.png" alt="menu hamburguesa">
         </nav>
 
-        <!--Formulario de Contacto-->
-
-        <section >
-            <div class=contenedorFormulario>
-                <form action="#" method="get" enctype="text/plain">
-                    <fieldset>
-                        <legend>Formulario de Contacto</legend>
-                        <label for="texto">Nombre</label>
-                        <input name="texto" placeholder="Ingresar Nombre y Apellido" type="text">
-
-                        <br>
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="@email" name="email">
-                        <br>
-                        <span>Mensaje</span><textarea name="mensaje" placeholder="Escribe tu  mensaje"></textarea>
-                        </label>
-                        <br>
-                        <br>
-                        <input name="enviar" value="Enviar" type="submit">
-                    </fieldset>
-                </form>
-            </div>
-        </section>
-
-        <!-- Sección pie de la página-->
-        <hr>
-        <footer>
-            <ul>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="../index.html">Calendario</a></li>
-                <li><a href="fases.html">Fases Lunares</a></li>
-                <li><a href="celebraciones.html">Celebraciones</a></li>
-                <li><a href="practicas.html">Prácticas</a></li>
-            
-                <li>Redes Sociales</li>
-                <li>Copyright</li>
-            </ul>
-
-        </footer>
+        <!--Formulario de Contacto Bootstrap-->
+        <form>
+            <fieldset>
+                <legend>Formulario de Contacto</legend>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Nombre y Apellido</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Tu dirección de correo nunca será compartida con
+                        nadie,
+                        jamás</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Enviar</button>
+            </fieldset>
+        </form>
     </div>
+    </section>
+
+    <!-- Sección pie de la página-->
+    <hr>
+    <footer>
+        <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="../index.html">Calendario</a></li>
+            <li><a href="fases.html">Fases Lunares</a></li>
+            <li><a href="celebraciones.html">Celebraciones</a></li>
+            <li><a href="practicas.html">Prácticas</a></li>
+
+            <li>Redes Sociales</li>
+            <li>Copyright</li>
+        </ul>
+
+    </footer>
+    </div>
+    <!-- JavaScript Bundle with Popper Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
