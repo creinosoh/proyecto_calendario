@@ -88,7 +88,7 @@ container {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto;
         grid-template-areas: "header" "nav" "container" "section" "footer";
-        grid-row-gap: 10px;
+        grid-row-gap: 5px;
     }
     /********************************/
     /* Header y barra de navegación */
