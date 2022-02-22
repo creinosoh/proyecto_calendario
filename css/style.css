@@ -63,6 +63,10 @@ footer {
     grid-area: footer;
 }
 
+container {
+    grid-area: container;
+}
+
 
 /***********************************/
 
@@ -82,8 +86,8 @@ footer {
     #main {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: "header" "nav" "section" "footer";
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "header" "nav" "container" "section" "footer";
         grid-row-gap: 10px;
     }
     /********************************/
@@ -315,8 +319,8 @@ footer {
     #main {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: "header" "nav" "section" "footer";
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "header" "nav" "container" "section" "footer";
         grid-row-gap: 10px;
     }
     /* Diseño del layout de las secciones con contenido como Fases Lunares y Prácticas*/
