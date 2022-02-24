@@ -1,0 +1,10 @@
+@import "colores";
+nav {
+    li {
+        a {
+            &:hover {
+                background-color: $turquesa-tibet;
+            }
+        }
+    }
+}
