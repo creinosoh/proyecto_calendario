@@ -1,10 +1,39 @@
 @import "colores";
-nav {
-    li {
+@import "patron_brocado";
+
+/* Mapa de Colores Tibet */
+$mapa-colores-hover: (
+  calendario: $turquesa-tibet,
+  faselunar: $rojo-tibet-brillante,
+  celebraciones: $amarillo-tibet,
+  practicas: $coral-tibet,
+  contacto: $azul-tibet,
+);
+
+/* Crea clases para cada pagina asignando un color del mapa de colores 
+para los colores el nav de cada pagina */
+
+/*Extiende clase generica de patron de brocado y cambia fondo del nav ademas 
+de hacer ajustes al diseño como el tamaño del patron*/
+
+@each $color-hover, $hvcolor in $mapa-colores-hover {
+  .#{$color-hover} {
+    nav {
+      @extend .patron-brocado-negro;
+      background-size: 3%;
+      background-color: map-get($mapa-colores-hover, $color-hover);
+     
+
+      li {
+        background-color: map-get($mapa-colores-hover, $color-hover);
+       
+
         a {
-            &:hover {
-                background-color: $turquesa-tibet;
-            }
+          &:hover {
+            background-color: darken($hvcolor, 15%);
+          }
         }
+      }
     }
+  }
 }
