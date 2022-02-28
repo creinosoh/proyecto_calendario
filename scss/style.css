@@ -23,6 +23,11 @@ de hacer ajustes al diseño como el tamaño del patron*/
   background-color: #2E8888;
 }
 
+.calendario nav li a {
+  transition: all 2s;
+  background-color: #2E8888, 80%;
+}
+
 .calendario nav li a:hover {
   background-color: #1b4f4f;
 }
@@ -34,6 +39,11 @@ de hacer ajustes al diseño como el tamaño del patron*/
 
 .faselunar nav li {
   background-color: #BE0A09;
+}
+
+.faselunar nav li a {
+  transition: all 2s;
+  background-color: #BE0A09, 80%;
 }
 
 .faselunar nav li a:hover {
@@ -49,6 +59,11 @@ de hacer ajustes al diseño como el tamaño del patron*/
   background-color: #CF8900;
 }
 
+.celebraciones nav li a {
+  transition: all 2s;
+  background-color: #CF8900, 80%;
+}
+
 .celebraciones nav li a:hover {
   background-color: #835600;
 }
@@ -62,6 +77,11 @@ de hacer ajustes al diseño como el tamaño del patron*/
   background-color: #ff6f61;
 }
 
+.practicas nav li a {
+  transition: all 2s;
+  background-color: #ff6f61, 80%;
+}
+
 .practicas nav li a:hover {
   background-color: #ff2915;
 }
@@ -73,6 +93,11 @@ de hacer ajustes al diseño como el tamaño del patron*/
 
 .contacto nav li {
   background-color: #6A96B3;
+}
+
+.contacto nav li a {
+  transition: all 2s;
+  background-color: #6A96B3, 80%;
 }
 
 .contacto nav li a:hover {

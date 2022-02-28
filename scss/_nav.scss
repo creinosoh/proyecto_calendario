@@ -10,6 +10,12 @@ $mapa-colores-hover: (
   contacto: $azul-tibet,
 );
 
+@mixin color-texto($color-de-texto) {
+    transition: all 2s;
+    background-color: ($color-de-texto, 80%); 
+
+}
+
 /* Crea clases para cada pagina asignando un color del mapa de colores 
 para los colores el nav de cada pagina */
 
@@ -22,13 +28,12 @@ de hacer ajustes al diseño como el tamaño del patron*/
       @extend .patron-brocado-negro;
       background-size: 3%;
       background-color: map-get($mapa-colores-hover, $color-hover);
-     
 
       li {
         background-color: map-get($mapa-colores-hover, $color-hover);
-       
 
         a {
+          @include color-texto($hvcolor);
           &:hover {
             background-color: darken($hvcolor, 15%);
           }
